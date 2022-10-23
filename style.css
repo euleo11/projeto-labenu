@@ -5,50 +5,61 @@
 
 input[type="text" i] {
     padding: 1px 2px;
+    margin: 20px;
 }
 
-input[type="password" i] {
-    -webkit-text-security: disc !important;
-    padding: 1px 2px;
-}
+
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
 
 .tamanhoImagem {
     width: 340px;
     height: 340px;
+    border-radius: 50%;
 }
 
 header {
-    background-color: rgb(186, 110, 110);
+    background-color: rgba(255, 0, 238, 0.321);
     color: aliceblue;
     text-align: center;
     height: 101px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    }
 
-aside {
-    height: 100px;
+
+.estilo-do-imput {
+    height: 70px;
     position: absolute;
     top: 0;
     right: 0;
-    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }
 
-main {
-    text-align: center;
-}
+
 
 footer {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    background-color: rgb(186, 110, 110);
-    color: aliceblue
+    background-color: rgba(255, 0, 238, 0.321);
+    color: aliceblue;
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
 }
 
 .efeitotitulo {
-    color: rgb(198, 122, 249);
+    color: rgb(255, 255, 255);
     text-shadow: rgb(0, 0, 0) 0.05000em 0.05000em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
 }
 
 
@@ -63,42 +74,47 @@ footer {
     text-shadow: rgb(206, 255, 114) 0.05000em 0.05000em;
 }
 
-.efeitomain:hover{
-    background-color: rgb(186, 110, 110);
+/* .efeitomain:hover{ */
+    .efeitomain{
     color:aliceblue;
     text-shadow: rgb(0, 0, 0) 0.05000em 0.05000em;
 }
 
-/* #section-imagens{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 50px;    
-} */
 
-.section-imagens{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-around;
-    padding: 50px;
+.article-esquerdo-borda{
+    color: aliceblue;
+    padding: 20px;
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.321);
+    border: 1px solid black;
+    float: left;
+    width: 400px;
+    height: 500px;
     text-align: center;
+    margin: 50px;
+    
 }
 
-.article-borda{
-    border: 1px solid rgb(186, 110, 110);
+.article-direito-borda{
+    color: aliceblue;
     padding: 20px;
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.321);
+    border: 1px solid black;
+    float: right;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    margin: 50px;
 }
 
 .logo{
     width: 75px;
     height: 75px;
-    padding: 10px;
+    
 }
 
-.fixo{
-    position: fixed;
-    width: 100%;
-}
+
 
 /*
 --------MOBILE
@@ -108,3 +124,21 @@ footer {
         flex-direction: column;
     }
 } */
+
+body{
+    background-image: url(/fundo.jpg);
+}
+
+main{
+    margin-top: 10px;
+}
+
+.cardSabores{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    }
+
+.efeitoSabor{
+    background-color: rgba(0, 0, 0, 0.54);
+}
