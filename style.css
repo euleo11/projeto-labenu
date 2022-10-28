@@ -81,32 +81,20 @@ footer {
 }
 
 
-.article-esquerdo-borda{
+.estilo-menu-de-pizza{
     color: aliceblue;
-    padding: 20px;
+    padding: 30px;
     margin-top: 100px;
     background-color: rgba(0, 0, 0, 0.321);
     border: 1px solid black;
-    float: left;
     width: 400px;
     height: 500px;
     text-align: center;
     margin: 50px;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.article-direito-borda{
-    color: aliceblue;
-    padding: 20px;
-    margin-top: 100px;
-    background-color: rgba(0, 0, 0, 0.321);
-    border: 1px solid black;
-    float: right;
-    width: 400px;
-    height: 500px;
-    text-align: center;
-    margin: 50px;
-}
 
 .logo{
     width: 75px;
@@ -127,7 +115,8 @@ footer {
 
 body{
     background-image: url(/fundo.jpg);
-}
+    background-size: 100% 100%;
+   }
 
 main{
     margin-top: 10px;
@@ -142,3 +131,35 @@ main{
 .efeitoSabor{
     background-color: rgba(0, 0, 0, 0.54);
 }
+
+
+
+/*---------INPUT*/
+
+#searchbar{
+    margin-left: 15%;
+    padding:15px;
+    border-radius: 10px;
+  }
+
+  input[type=text] {
+     width: 30%;
+     -webkit-transition: width 0.15s ease-in-out;
+     transition: width 0.15s ease-in-out;
+  }
+
+  /* When the input field gets focus,
+       change its width to 100% */
+  input[type=text]:focus {
+    width: 70%;
+  }
+
+ #list{
+   font-size:  1.5em;
+   margin-left: 90px;
+  }
+
+.pizzaz{
+  display: list-item;    
+  list-style: none;
+ } 
